@@ -1,50 +1,28 @@
-# Welcome to your Expo app 👋
+# Projeto GitHub User Search
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este é um projeto desenvolvido para um trabalho da disciplina de Desenvolvimento mobile, utilizando o Expo. O aplicativo busca informações de usuários do GitHub.
 
-## Get started
+### Tela Inicial
 
-1. Install dependencies
+A tela inicial contém um campo de entrada onde o usuário pode digitar o nome de usuário do GitHub que deseja pesquisar. Há também um botão "Buscar" que, quando pressionado, aciona a busca dos dados do usuário.
 
-   ```bash
-   npm install
-   ```
+#### Comportamento ao clicar no botão "Buscar"
 
-2. Start the app
+Quando o botão "Buscar" é pressionado, o aplicativo envia uma requisição para a API do GitHub, buscando pelo usuário informado. 
 
-   ```bash
-    npx expo start
-   ```
+- Caso não encontre o usuário, uma mensagem aparece na tela: "Usuário não encontrado na base de dados."
+- Caso o usuário exista, o aplicativo mostra as seguintes informações:
+  - O nome do usuário
+  - A foto do usuário
+  - A quantidade de repositórios que o usuário tem
+  - A quantidade de seguidores que o usuário tem
+  - A quantidade de usuários que o usuário em questão segue
 
-In the output, you'll find options to open the app in a
+## Como executar o projeto
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+1. Clone este repositório
+2. Instale as dependências com `npm install`
+3. Inicie o servidor com `expo start`
+4. Abra o aplicativo Expo no seu telefone e escaneie o código QR
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
